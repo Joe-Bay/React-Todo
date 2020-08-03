@@ -18,8 +18,8 @@ class App extends React.Component {
 
   clearCompleted = () => {
     const newTodos = this.state.todos.filter(todo => !todo.completed)
-    this.setState({
-      todos: newTodos
+    this.setState({ // filter to the completed ones
+      todos: newTodos // setting state to become the new filtered array
     })
   }
 
@@ -53,7 +53,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='App'>
         <div className="header">
           <h2>Welcome to your Todo App!</h2>
           <TodoForm addItem={this.addTodo} />

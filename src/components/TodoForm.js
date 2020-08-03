@@ -27,7 +27,7 @@ handleSubmit = event => {
 
 render() {
     return (
-        <form onSubmit={this.handleSubmit}>
+        <form className="todo-form"onSubmit={this.handleSubmit}>
             <input 
             name='todo'
             placeholder='Add Todo'
