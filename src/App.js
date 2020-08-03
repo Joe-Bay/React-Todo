@@ -16,6 +16,14 @@ class App extends React.Component {
     }
   }
 
+  clearCompleted = () => {
+    const newTodos = this.state.todos.filter(todo => !todo.completed)
+    this.setState({
+      todos: newTodos
+    })
+  }
+
+
   toggleItem = id => {
     // use arrow method
     this.setState({
@@ -39,8 +47,9 @@ class App extends React.Component {
     }
     this.setState({
       todos: [...this.state.todos, newTodo]
-    })
+    }) 
   }
+
 
   render() {
     return (
@@ -49,7 +58,7 @@ class App extends React.Component {
           <h2>Welcome to your Todo App!</h2>
           <TodoForm addItem={this.addTodo} />
         </div>
-        <TodoList toggleItem={this.toggleItem} todos={this.state.todos}/>
+        <TodoList toggleItem={this.toggleItem} todos={this.state.todos} clearCompleted={this.clearCompleted}/>
       </div>
     );
   }
