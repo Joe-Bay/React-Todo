@@ -25,7 +25,6 @@ class App extends React.Component {
 
 
   toggleItem = id => {
-    // use arrow method
     this.setState({
       todos: this.state.todos.map(item => {
         if (item.id === id) {
@@ -55,7 +54,8 @@ class App extends React.Component {
     return (
       <div className='App'>
         <div className="header">
-          <h2>Welcome to your Todo App!</h2>
+          <h2>Todo List!</h2>
+          <h3>Once you've added an item to the list just click the name of the item to mark it as completed and hit the Clear Complete button to clear the completed tasks</h3>
           <TodoForm addItem={this.addTodo} />
         </div>
         <TodoList toggleItem={this.toggleItem} todos={this.state.todos} clearCompleted={this.clearCompleted}/>

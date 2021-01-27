@@ -12,9 +12,12 @@
 }
 .todo-form button{
     width: 10%;
+    background-color:white;
+    font-size: 1rem;
 }
 .todo-form input{
     width: 30%;
+    height: 2.5rem;
 }
 .header{
     text-align: center;
@@ -26,12 +29,16 @@
     justify-content: center;
 }
 .list-and-complete-button p{
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color:black;
+
 }
 .list-and-complete-button button{
-    border-radius: 10px;
+    width: 10%;
+    height:2.5rem;
+    font-size: 1rem;
 }
 
 body{
-    background-color:mistyrose;
+    background-color:darkgray;
 }
