@@ -1,0 +1,44 @@
+.todo.completed{
+    text-decoration: line-through;
+}
+.todo-form{
+    display:flex;
+    justify-content: center;
+}
+.todo-form button:hover{
+  opacity: 0.8;  
+  background-color: lightgray;
+
+}
+.todo-form button{
+    width: 10%;
+    background-color:white;
+    font-size: 1rem;
+}
+.todo-form input{
+    width: 30%;
+    height: 2.5rem;
+}
+.header{
+    text-align: center;
+}
+.list-and-complete-button{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.list-and-complete-button p{
+    font-size: 2rem;
+    color:black;
+
+}
+.list-and-complete-button button{
+    width: 10%;
+    height:2.5rem;
+    font-size: 1rem;
+}
+
+body{
+    background-color:darkgray;
+}
